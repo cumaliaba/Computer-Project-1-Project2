@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingBottom="16dp"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="16dp"
+tools:context="com.example.abalik.start.MainActivity">
+
+
+    <Button
+        android:id="@+id/fileEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select File to Send" />
+
+    <EditText
+        android:id="@+id/aliciEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Alıcı"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/kaydetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GÖNDER" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bana Gelen Mesajları Göster" />
+
+    <TextView
+        android:id="@+id/MesajTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+
+</LinearLayout>
