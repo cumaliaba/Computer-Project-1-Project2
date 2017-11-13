@@ -155,8 +155,10 @@ public class SendFile extends AppCompatActivity implements View.OnClickListener 
         if (extras != null) {
             kullanici_str_yeni = extras.getString("kullanici_str");
         }
+        //String newtext = huffman.compress(dosya_ici);
 
         dbRefKeyli.setValue(new Mesaj(kullanici_str_yeni, dosya_ici, alici));
+        Toast.makeText(SendFile.this, "Dosya server'a gönderildi!", Toast.LENGTH_SHORT).show();
 
     }
 
