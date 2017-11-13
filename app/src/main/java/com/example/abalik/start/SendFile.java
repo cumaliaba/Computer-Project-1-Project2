@@ -169,18 +169,29 @@ public class SendFile extends AppCompatActivity implements View.OnClickListener 
         dbGelenler.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                Bundle extras = getIntent().getExtras();
+                String kullanici_str_yeni = null;
+                if (extras != null) {
+                    kullanici_str_yeni = extras.getString("kullanici_str");
+                }
+
+                mesajlar.append("Benim adım: "+kullanici_str_yeni + "\n");
                 mesajlar.append("Gonderen   |   Mesaj\n");
                 mesajlar.append("---------------------------\n");
 
                 for (DataSnapshot gelenler: dataSnapshot.getChildren()) {
                     //String kullanici_adi_str=kullanici_adi.getText().toString().trim();
 
+
+                    /*
                     // kullanıcıyı giriş sayfasından alabilmek için
                     Bundle extras = getIntent().getExtras();
                     String kullanici_str_yeni = null;
                     if (extras != null) {
                         kullanici_str_yeni = extras.getString("kullanici_str");
                     }
+                    */
 
 
 
